@@ -5,12 +5,16 @@ on:
     branches: 
       - 'main'
       - 'release/*'
+      - '!/docs/'
+      - '!/*.md'
+      - '!/*.yml'
   pull_request:
     branches: 
       - 'main'
       - 'release/*'
       - '!/docs/'
       - '!/*.md'
+      - '!/*.yml'
   
 jobs: 
   event_file: # Used for test reporting
