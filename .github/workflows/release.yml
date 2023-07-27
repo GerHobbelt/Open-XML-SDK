@@ -10,7 +10,7 @@ permissions: {}
 jobs: 
     deploy:
       name: "Deploy Packages to Nuget"
-      environment: nuget
+#       environment: nuget
       if: ${{ github.event.workflow_run.conclusion == 'success' && github.event_name == 'release' }}
       runs-on: windows-latest
       steps:
