@@ -28,6 +28,8 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 6.x
+      - name: Install .NET Core from global.json
+        uses: actions/setup-dotnet@v3
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0
         with:
