@@ -4,15 +4,10 @@ on:
   
   pull_request:
     branches:
-      - update-version
       - 'main'
       - 'release/*'
   release:
     types: [published]
-  workflow_run:
-    workflows: ["Build"]
-    types:
-      - completed
 
 jobs: 
   pack:
