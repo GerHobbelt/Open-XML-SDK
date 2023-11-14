@@ -84,8 +84,8 @@ jobs:
 
   sign:
     name: "Sign Package"
-    if: github.event_name == 'release'
-    needs: [pack] 
+    if: github.event_name != 'pull_request'
+    needs: [pack]
     runs-on: windows-latest
     steps: 
          - name: Install .NET Core
